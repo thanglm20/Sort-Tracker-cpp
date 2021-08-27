@@ -69,13 +69,13 @@ private:
     std::deque<TrajectoryPoint> m_trace;
 };
 
-
 struct TrackingTrace
 {
     Trace m_trace;                     // Trajectory
     Rect2f m_rect;                     // box of object track
-	size_t m_ID = 0;                   // Objects ID
     string m_type;                     // Objects type name or empty value
+    size_t m_ID = 0;                   // Objects ID
+    bool isOutOfFrame = false;             // if object Out of Frame
 };
 
 
@@ -85,9 +85,9 @@ private:
     /* data */
     int max_trace_length = 50;
     int max_age = 10;
-    int min_confirmed = 1;
+    int min_confirmed = 2;
 public:
-    TrackerManager(Rect2f rect);
+    TrackerManager(Rect2f rect, string typeObject);
     ~TrackerManager();
     KalmanTracker tracker;
     TrackingTrace tracer;
@@ -97,6 +97,7 @@ public:
     bool isConfirmed();
     bool isDeleted();
     bool isTentative();
+    bool isOutOfFrame();
 };
 
 #endif

@@ -14,9 +14,11 @@
 #include <set>
 
 
-TrackerManager::TrackerManager(Rect2f rect)
+TrackerManager::TrackerManager(Rect2f rect, string typeObject)
 {
     this->tracker = KalmanTracker(rect);
+    this->tracer.m_type = typeObject;
+    this->tracer.isOutOfFrame = false;
 }
 
 TrackerManager::~TrackerManager()
@@ -27,6 +29,7 @@ TrackerManager::~TrackerManager()
 void TrackerManager::update(Rect2f rect)
 {   
     this->tracker.update(rect);
+    this->tracer.isOutOfFrame = false;
     this->tracer.m_rect = rect;
     this->tracer.m_ID = this->tracker.m_id + 1;
     this->tracer.m_trace.push_back(this->tracker.get_point());
@@ -48,17 +51,22 @@ Rect2f TrackerManager::predict()
 
 bool TrackerManager::isConfirmed()
 {
-    return ((this->tracker.m_time_since_update < 1) &&
-            (this->tracker.m_hit_streak >=  min_confirmed));
+    this->tracer.isOutOfFrame = false;
+    return (this->tracker.m_hit_streak >=  min_confirmed);
 }
 
 bool TrackerManager::isDeleted()
 {
+    this->tracer.isOutOfFrame = true;
     return (this->tracker.m_time_since_update > max_age);
 }
 
 bool TrackerManager::isTentative()
 {
-    return (this->tracker.m_time_since_update > min_confirmed);
+    return (this->tracker.m_time_since_update > 1);
 }
 
+bool TrackerManager::isOutOfFrame()
+{
+    return (this->tracker.m_time_since_update > 0);
+}

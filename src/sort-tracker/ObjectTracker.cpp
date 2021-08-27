@@ -46,8 +46,10 @@ ObjectTracker::~ObjectTracker()
 
 }
 
-void ObjectTracker::update(vector<Rect2f> detectedBox)
+void ObjectTracker::update(vector<ObjectTrace> detected)
 {   
+    vector<Rect_<float>> detectedBox;
+    for(auto det : detected) detectedBox.push_back(det.rect);
 	vector<Rect_<float>> predictedBoxes;
 	vector<vector<double>> iouMatrix;
 	vector<int> assignment;
@@ -141,28 +143,34 @@ void ObjectTracker::update(vector<Rect2f> detectedBox)
     }
 
     // create and initialise new this->trackers for unmatched detections
+    // or update if object is out of frame and object was not deleted
     for (auto umd : unmatchedDetections)
     {
-        this->trackers.push_back(std::make_unique<TrackerManager>(detectedBox[umd]));
+        this->trackers.push_back(std::make_unique<TrackerManager>(detectedBox[umd], detected[umd].label));
     }
 }
 
 vector<TrackingTrace> ObjectTracker::getTracks()
 {
+    // check to delete object track
     vector<TrackingTrace> traceTracks;
     for (auto it = this->trackers.begin(); it != this->trackers.end();)
-    {       
-        if((*it)->isConfirmed() && !(*it)->isTentative())
+    {      
+        if((*it)->isOutOfFrame())
+        {
+            (*it)->tracer.isOutOfFrame = true;
+        }
+        if((*it)->isConfirmed())
         {
             TrackingTrace trace = (*it)->get();
             traceTracks.push_back(trace);
             it++;
         }
         else
-            it++;
+            it++;  
         // remove dead tracklet
         if (it != this->trackers.end() && (*it)->isDeleted())
-            it = this->trackers.erase(it);
+            it = this->trackers.erase(it);      
     }
     return traceTracks;
 }

@@ -33,7 +33,7 @@ public:
     CrosslineDetector(cv::Point beginPoint, cv::Point endPoint, std::string typeCrossing);
     ~CrosslineDetector();
     void setCrossline(cv::Point beginPoint, cv::Point endPoint, std::string typeCrossing);
-    void updateCrossline(Mat& frame, vector<bbox_t> detected, vector<outDataCrossline>& output);
+    void updateCrossline(Mat& frame, vector<ObjectTrace> detected, vector<outDataCrossline>& output);
 };
 
 

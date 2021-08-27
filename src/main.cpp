@@ -43,20 +43,8 @@ int main()
 		cap >> frame;
 		if (frame.empty()) 
             break;
-		std::vector<bbox_t> detected;
+		std::vector<ObjectTrace> detected;
 		detector->processDetect(frame, 0.5, detected);
-		vector<Rect2f> boxDetected;
-		boxDetected.clear();
-		for(int i = 0; i < detected.size(); i++)
-		{
-			Rect2f box;
-			box.x = detected[i].x;
-			box.y = detected[i].y;
-			box.width = detected[i].w;
-			box.height = detected[i].h;
-			boxDetected.push_back(box);
-			cv::rectangle(frame, cv::Rect(detected[i].x, detected[i].y, detected[i].w, detected[i].h), cv::Scalar(255,0, 0), 1, 8);
-		}
 		double start = getTickCount();
 		vector<outDataCrossline> output_crossline;
 		crossline->setCrossline(cv::Point(200, 400), cv::Point(frame.cols, 400), "all");

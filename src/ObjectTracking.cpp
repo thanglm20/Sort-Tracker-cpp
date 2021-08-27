@@ -69,7 +69,7 @@ ObjectTracking::~ObjectTracking()
   
 }
 
-void ObjectTracking::process( vector<Rect2f> detBoxes, std::vector<TrackingTrace>& tracks) 
+void ObjectTracking::process( vector<ObjectTrace> detBoxes, std::vector<TrackingTrace>& tracks) 
 {
     double start = getTickCount();
     this->m_tracker->update(detBoxes);
@@ -135,7 +135,7 @@ int ObjectTracking::checkCrossline(const TrackingTrace& track, float xMax, float
     auto Pti2f = [&](cv::Point pt) -> cv::Point2f {
         return cv::Point2f(pt.x / xMax, pt.y / yMax);
     };
-    constexpr size_t minTrack = 5;  
+    constexpr size_t minTrack = 2;  
     int direction  = 0;
     if (track.m_trace.size() >= minTrack) {
         if (m_lastIntersections.find(track.m_ID) == m_lastIntersections.end()) {

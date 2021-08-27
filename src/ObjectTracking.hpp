@@ -9,7 +9,7 @@ public:
     ObjectTracking();
     virtual ~ObjectTracking();
     
-    void process( vector<Rect2f> detBoxes, std::vector<TrackingTrace>& tracks);
+    void process( vector<ObjectTrace> detBoxes, std::vector<TrackingTrace>& tracks);
     // Lines API
     void AddLine(const RoadLine& newLine);
     bool GetLine(unsigned int li6neUid, RoadLine& line);

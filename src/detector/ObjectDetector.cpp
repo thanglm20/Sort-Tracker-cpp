@@ -136,7 +136,7 @@ std::vector<std::string> ObjectDetector::loadObjectNames(const std::string &file
     return fileLines;
 }
 
-void ObjectDetector::processDetect(const cv::Mat& frame, float thresh, std::vector<bbox_t>& detectResult) 
+void ObjectDetector::processDetect(const cv::Mat& frame, float thresh, std::vector<ObjectTrace>& detectResult) 
 {
     int img_w = frame.cols;
     int img_h = frame.rows;
@@ -156,18 +156,15 @@ void ObjectDetector::processDetect(const cv::Mat& frame, float thresh, std::vect
         const float* values = out.row(i);
  		if(thresh < values[1])
         {
-            bbox_t obj;
-            obj.obj_id = (int)values[0] - 1;
-            obj.prob = values[1];
-            obj.x = values[2] * img_w;
-            obj.y = values[3] * img_h;
-            obj.w = values[4] * img_w - obj.x;
-            obj.h = values[5] * img_h - obj.y;
+            ObjectTrace obj;
+            obj.label = "vehicle";
+            obj.score = values[1];
+            obj.rect.x = values[2] * img_w;
+            obj.rect.y = values[3] * img_h;
+            obj.rect.width = values[4] * img_w - obj.rect.x;
+            obj.rect.height = values[5] * img_h - obj.rect.y;
             detectResult.push_back(obj);
-            cv::Rect2f rect( obj.x, obj.y, obj.w, obj.h);
         }
-        
-        //cv::rectangle(frame, rect, cv::Scalar(255, 0, 0), 1, 8);
     }
     //cv::imshow("frame", frame);
 }

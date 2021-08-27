@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named kalman
+# Target rules for targets named tracker
 
 # Build rule for target.
-kalman: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kalman
-.PHONY : kalman
+tracker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tracker
+.PHONY : tracker
 
 # fast build rule for target.
-kalman/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/build
-.PHONY : kalman/fast
+tracker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/build
+.PHONY : tracker/fast
 
 src/CrosslineDetector.o: src/CrosslineDetector.cpp.o
 .PHONY : src/CrosslineDetector.o
 
 # target to build an object file
 src/CrosslineDetector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/CrosslineDetector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.o
 .PHONY : src/CrosslineDetector.cpp.o
 
 src/CrosslineDetector.i: src/CrosslineDetector.cpp.i
@@ -142,7 +142,7 @@ src/CrosslineDetector.i: src/CrosslineDetector.cpp.i
 
 # target to preprocess a source file
 src/CrosslineDetector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/CrosslineDetector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.i
 .PHONY : src/CrosslineDetector.cpp.i
 
 src/CrosslineDetector.s: src/CrosslineDetector.cpp.s
@@ -150,7 +150,7 @@ src/CrosslineDetector.s: src/CrosslineDetector.cpp.s
 
 # target to generate assembly for a file
 src/CrosslineDetector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/CrosslineDetector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.s
 .PHONY : src/CrosslineDetector.cpp.s
 
 src/ObjectTracking.o: src/ObjectTracking.cpp.o
@@ -158,7 +158,7 @@ src/ObjectTracking.o: src/ObjectTracking.cpp.o
 
 # target to build an object file
 src/ObjectTracking.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/ObjectTracking.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o
 .PHONY : src/ObjectTracking.cpp.o
 
 src/ObjectTracking.i: src/ObjectTracking.cpp.i
@@ -166,7 +166,7 @@ src/ObjectTracking.i: src/ObjectTracking.cpp.i
 
 # target to preprocess a source file
 src/ObjectTracking.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/ObjectTracking.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/ObjectTracking.cpp.i
 .PHONY : src/ObjectTracking.cpp.i
 
 src/ObjectTracking.s: src/ObjectTracking.cpp.s
@@ -174,7 +174,7 @@ src/ObjectTracking.s: src/ObjectTracking.cpp.s
 
 # target to generate assembly for a file
 src/ObjectTracking.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/ObjectTracking.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/ObjectTracking.cpp.s
 .PHONY : src/ObjectTracking.cpp.s
 
 src/RoadLine.o: src/RoadLine.cpp.o
@@ -182,7 +182,7 @@ src/RoadLine.o: src/RoadLine.cpp.o
 
 # target to build an object file
 src/RoadLine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/RoadLine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/RoadLine.cpp.o
 .PHONY : src/RoadLine.cpp.o
 
 src/RoadLine.i: src/RoadLine.cpp.i
@@ -190,7 +190,7 @@ src/RoadLine.i: src/RoadLine.cpp.i
 
 # target to preprocess a source file
 src/RoadLine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/RoadLine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/RoadLine.cpp.i
 .PHONY : src/RoadLine.cpp.i
 
 src/RoadLine.s: src/RoadLine.cpp.s
@@ -198,7 +198,7 @@ src/RoadLine.s: src/RoadLine.cpp.s
 
 # target to generate assembly for a file
 src/RoadLine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/RoadLine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/RoadLine.cpp.s
 .PHONY : src/RoadLine.cpp.s
 
 src/detector/ObjectDetector.o: src/detector/ObjectDetector.cpp.o
@@ -206,7 +206,7 @@ src/detector/ObjectDetector.o: src/detector/ObjectDetector.cpp.o
 
 # target to build an object file
 src/detector/ObjectDetector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/detector/ObjectDetector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o
 .PHONY : src/detector/ObjectDetector.cpp.o
 
 src/detector/ObjectDetector.i: src/detector/ObjectDetector.cpp.i
@@ -214,7 +214,7 @@ src/detector/ObjectDetector.i: src/detector/ObjectDetector.cpp.i
 
 # target to preprocess a source file
 src/detector/ObjectDetector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/detector/ObjectDetector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.i
 .PHONY : src/detector/ObjectDetector.cpp.i
 
 src/detector/ObjectDetector.s: src/detector/ObjectDetector.cpp.s
@@ -222,7 +222,7 @@ src/detector/ObjectDetector.s: src/detector/ObjectDetector.cpp.s
 
 # target to generate assembly for a file
 src/detector/ObjectDetector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/detector/ObjectDetector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.s
 .PHONY : src/detector/ObjectDetector.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -230,7 +230,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -238,7 +238,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -246,7 +246,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/sort-tracker/Hungarian.o: src/sort-tracker/Hungarian.cpp.o
@@ -254,7 +254,7 @@ src/sort-tracker/Hungarian.o: src/sort-tracker/Hungarian.cpp.o
 
 # target to build an object file
 src/sort-tracker/Hungarian.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/Hungarian.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.o
 .PHONY : src/sort-tracker/Hungarian.cpp.o
 
 src/sort-tracker/Hungarian.i: src/sort-tracker/Hungarian.cpp.i
@@ -262,7 +262,7 @@ src/sort-tracker/Hungarian.i: src/sort-tracker/Hungarian.cpp.i
 
 # target to preprocess a source file
 src/sort-tracker/Hungarian.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/Hungarian.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.i
 .PHONY : src/sort-tracker/Hungarian.cpp.i
 
 src/sort-tracker/Hungarian.s: src/sort-tracker/Hungarian.cpp.s
@@ -270,7 +270,7 @@ src/sort-tracker/Hungarian.s: src/sort-tracker/Hungarian.cpp.s
 
 # target to generate assembly for a file
 src/sort-tracker/Hungarian.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/Hungarian.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.s
 .PHONY : src/sort-tracker/Hungarian.cpp.s
 
 src/sort-tracker/KalmanTracker.o: src/sort-tracker/KalmanTracker.cpp.o
@@ -278,7 +278,7 @@ src/sort-tracker/KalmanTracker.o: src/sort-tracker/KalmanTracker.cpp.o
 
 # target to build an object file
 src/sort-tracker/KalmanTracker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/KalmanTracker.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.o
 .PHONY : src/sort-tracker/KalmanTracker.cpp.o
 
 src/sort-tracker/KalmanTracker.i: src/sort-tracker/KalmanTracker.cpp.i
@@ -286,7 +286,7 @@ src/sort-tracker/KalmanTracker.i: src/sort-tracker/KalmanTracker.cpp.i
 
 # target to preprocess a source file
 src/sort-tracker/KalmanTracker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/KalmanTracker.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.i
 .PHONY : src/sort-tracker/KalmanTracker.cpp.i
 
 src/sort-tracker/KalmanTracker.s: src/sort-tracker/KalmanTracker.cpp.s
@@ -294,7 +294,7 @@ src/sort-tracker/KalmanTracker.s: src/sort-tracker/KalmanTracker.cpp.s
 
 # target to generate assembly for a file
 src/sort-tracker/KalmanTracker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/KalmanTracker.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.s
 .PHONY : src/sort-tracker/KalmanTracker.cpp.s
 
 src/sort-tracker/ObjectTracker.o: src/sort-tracker/ObjectTracker.cpp.o
@@ -302,7 +302,7 @@ src/sort-tracker/ObjectTracker.o: src/sort-tracker/ObjectTracker.cpp.o
 
 # target to build an object file
 src/sort-tracker/ObjectTracker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/ObjectTracker.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.o
 .PHONY : src/sort-tracker/ObjectTracker.cpp.o
 
 src/sort-tracker/ObjectTracker.i: src/sort-tracker/ObjectTracker.cpp.i
@@ -310,7 +310,7 @@ src/sort-tracker/ObjectTracker.i: src/sort-tracker/ObjectTracker.cpp.i
 
 # target to preprocess a source file
 src/sort-tracker/ObjectTracker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/ObjectTracker.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.i
 .PHONY : src/sort-tracker/ObjectTracker.cpp.i
 
 src/sort-tracker/ObjectTracker.s: src/sort-tracker/ObjectTracker.cpp.s
@@ -318,7 +318,7 @@ src/sort-tracker/ObjectTracker.s: src/sort-tracker/ObjectTracker.cpp.s
 
 # target to generate assembly for a file
 src/sort-tracker/ObjectTracker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/ObjectTracker.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.s
 .PHONY : src/sort-tracker/ObjectTracker.cpp.s
 
 src/sort-tracker/TrackerManager.o: src/sort-tracker/TrackerManager.cpp.o
@@ -326,7 +326,7 @@ src/sort-tracker/TrackerManager.o: src/sort-tracker/TrackerManager.cpp.o
 
 # target to build an object file
 src/sort-tracker/TrackerManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/TrackerManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.o
 .PHONY : src/sort-tracker/TrackerManager.cpp.o
 
 src/sort-tracker/TrackerManager.i: src/sort-tracker/TrackerManager.cpp.i
@@ -334,7 +334,7 @@ src/sort-tracker/TrackerManager.i: src/sort-tracker/TrackerManager.cpp.i
 
 # target to preprocess a source file
 src/sort-tracker/TrackerManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/TrackerManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.i
 .PHONY : src/sort-tracker/TrackerManager.cpp.i
 
 src/sort-tracker/TrackerManager.s: src/sort-tracker/TrackerManager.cpp.s
@@ -342,7 +342,7 @@ src/sort-tracker/TrackerManager.s: src/sort-tracker/TrackerManager.cpp.s
 
 # target to generate assembly for a file
 src/sort-tracker/TrackerManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman.dir/build.make CMakeFiles/kalman.dir/src/sort-tracker/TrackerManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.s
 .PHONY : src/sort-tracker/TrackerManager.cpp.s
 
 # Help Target
@@ -353,7 +353,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... kalman"
+	@echo "... tracker"
 	@echo "... src/CrosslineDetector.o"
 	@echo "... src/CrosslineDetector.i"
 	@echo "... src/CrosslineDetector.s"
