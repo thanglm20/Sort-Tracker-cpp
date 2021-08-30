@@ -28,6 +28,7 @@ file( GLOB SOURCES 	src/*.cpp
                     src/detector/*.cpp
                     src/sort-tracker/*.cpp)
 
+include_directories(${CMAKE_SOURCE_DIR}/src)
 include_directories(${CMAKE_SOURCE_DIR}/src/detector)
 include_directories(${CMAKE_SOURCE_DIR}/src/sort-tracker)
 #add_library(bkav_Ai SHARED ${SOURCES})

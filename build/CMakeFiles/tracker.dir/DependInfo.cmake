@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/CrosslineDetector.cpp" "CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.o" "gcc" "CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.o.d"
+  "/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/MotionDetector.cpp" "CMakeFiles/tracker.dir/src/MotionDetector.cpp.o" "gcc" "CMakeFiles/tracker.dir/src/MotionDetector.cpp.o.d"
   "/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/ObjectTracking.cpp" "CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o" "gcc" "CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o.d"
   "/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/RoadLine.cpp" "CMakeFiles/tracker.dir/src/RoadLine.cpp.o" "gcc" "CMakeFiles/tracker.dir/src/RoadLine.cpp.o.d"
   "/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/detector/ObjectDetector.cpp" "CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o" "gcc" "CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o.d"

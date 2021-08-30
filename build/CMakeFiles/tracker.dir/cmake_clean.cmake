@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.o"
   "CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.o.d"
+  "CMakeFiles/tracker.dir/src/MotionDetector.cpp.o"
+  "CMakeFiles/tracker.dir/src/MotionDetector.cpp.o.d"
   "CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o"
   "CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o.d"
   "CMakeFiles/tracker.dir/src/RoadLine.cpp.o"

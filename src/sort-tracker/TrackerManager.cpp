@@ -51,8 +51,12 @@ Rect2f TrackerManager::predict()
 
 bool TrackerManager::isConfirmed()
 {
-    this->tracer.isOutOfFrame = false;
-    return (this->tracker.m_hit_streak >=  min_confirmed);
+    if(this->tracker.m_hit_streak >=  min_confirmed && this->tracker.m_time_since_update == 0)
+    {
+        this->tracer.isOutOfFrame = false;
+        return true;
+    }
+    return false;
 }
 
 bool TrackerManager::isDeleted()

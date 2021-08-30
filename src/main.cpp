@@ -8,6 +8,7 @@
 
 #include "CrosslineDetector.hpp"
 #include "ObjectTracker.hpp"
+#include "MotionDetector.hpp"
 using namespace std;
 using namespace cv;
 
@@ -22,14 +23,13 @@ int main()
     // std::string weightPath = "../models/people.bin";
 	ObjectDetector* detector = new ObjectDetector(namesPath, cfgPath, weightPath);
 	CrosslineDetector* crossline = new CrosslineDetector();
-	
-    ;
+	MotionDetector motion;
 	ObjectTracker tracker;
 	cv::VideoCapture cap;
 	while(1)
 	{
-	cap.open("../videos/traffic.mp4");
-	//cap.open("/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/sort-by-me/vdo.avi");
+	// cap.open("../videos/traffic.mp4");
+	cap.open("/media/thanglmb/Bkav/AICAM/Testing/videos/tuning.mp4");
 	if(!cap.isOpened())
 	{
 		printf("open video error\n");
@@ -50,6 +50,9 @@ int main()
 		crossline->setCrossline(cv::Point(200, 400), cv::Point(frame.cols, 400), "all");
     	crossline->updateCrossline(frame, detected, output_crossline);
 		// show result
+		Rect out;
+		motion.isMotionDetected(frame, out);
+		rectangle(frame, out, cv::Scalar(255, 0, 0), 3, 8);
 		resize(frame, frame, Size(1280, 720));
         imshow("VideoCapture", frame);
         char key = waitKey(1);

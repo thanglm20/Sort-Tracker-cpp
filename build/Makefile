@@ -153,6 +153,30 @@ src/CrosslineDetector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.s
 .PHONY : src/CrosslineDetector.cpp.s
 
+src/MotionDetector.o: src/MotionDetector.cpp.o
+.PHONY : src/MotionDetector.o
+
+# target to build an object file
+src/MotionDetector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/MotionDetector.cpp.o
+.PHONY : src/MotionDetector.cpp.o
+
+src/MotionDetector.i: src/MotionDetector.cpp.i
+.PHONY : src/MotionDetector.i
+
+# target to preprocess a source file
+src/MotionDetector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/MotionDetector.cpp.i
+.PHONY : src/MotionDetector.cpp.i
+
+src/MotionDetector.s: src/MotionDetector.cpp.s
+.PHONY : src/MotionDetector.s
+
+# target to generate assembly for a file
+src/MotionDetector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/src/MotionDetector.cpp.s
+.PHONY : src/MotionDetector.cpp.s
+
 src/ObjectTracking.o: src/ObjectTracking.cpp.o
 .PHONY : src/ObjectTracking.o
 
@@ -357,6 +381,9 @@ help:
 	@echo "... src/CrosslineDetector.o"
 	@echo "... src/CrosslineDetector.i"
 	@echo "... src/CrosslineDetector.s"
+	@echo "... src/MotionDetector.o"
+	@echo "... src/MotionDetector.i"
+	@echo "... src/MotionDetector.s"
 	@echo "... src/ObjectTracking.o"
 	@echo "... src/ObjectTracking.i"
 	@echo "... src/ObjectTracking.s"

@@ -81,12 +81,12 @@ clean: CMakeFiles/tracker.dir/clean
 CMakeFiles/tracker.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracker.dir/build.make CMakeFiles/tracker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target tracker"
 .PHONY : CMakeFiles/tracker.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tracker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tracker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/tracker.dir/rule

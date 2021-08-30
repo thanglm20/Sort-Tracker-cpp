@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/libncnn-linux_x86_64/include/ncnn -I/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/detector -I/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/sort-tracker -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/libncnn-linux_x86_64/include/ncnn -I/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src -I/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/detector -I/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/sort-tracker -isystem /usr/local/include/opencv4
 
 CXX_FLAGS = -std=gnu++14
 

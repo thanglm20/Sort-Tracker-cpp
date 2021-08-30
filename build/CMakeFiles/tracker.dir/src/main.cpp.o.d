@@ -359,4 +359,15 @@ CMakeFiles/tracker.dir/src/main.cpp.o: \
  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp \
  /usr/local/include/opencv4/opencv2/video.hpp \
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
- /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/TypeData.hpp
+ /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/TypeData.hpp \
+ /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/MotionDetector.hpp \
+ /usr/local/include/opencv4/opencv2/tracking.hpp \
+ /usr/local/include/opencv4/opencv2/tracking/tracker.hpp \
+ /usr/local/include/opencv4/opencv2/imgproc/types_c.h \
+ /usr/local/include/opencv4/opencv2/core/core_c.h \
+ /usr/local/include/opencv4/opencv2/core/types_c.h \
+ /usr/local/include/opencv4/opencv2/tracking/feature.hpp \
+ /usr/local/include/opencv4/opencv2/tracking/onlineMIL.hpp \
+ /usr/local/include/opencv4/opencv2/tracking/onlineBoosting.hpp \
+ /usr/local/include/opencv4/opencv2/tracking/tldDataset.hpp \
+ /usr/local/include/opencv4/opencv2/core/ocl.hpp

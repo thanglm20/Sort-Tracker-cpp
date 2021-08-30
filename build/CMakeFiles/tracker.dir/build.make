@@ -83,10 +83,24 @@ CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/CrosslineDetector.cpp -o CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.s
 
+CMakeFiles/tracker.dir/src/MotionDetector.cpp.o: CMakeFiles/tracker.dir/flags.make
+CMakeFiles/tracker.dir/src/MotionDetector.cpp.o: ../src/MotionDetector.cpp
+CMakeFiles/tracker.dir/src/MotionDetector.cpp.o: CMakeFiles/tracker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tracker.dir/src/MotionDetector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tracker.dir/src/MotionDetector.cpp.o -MF CMakeFiles/tracker.dir/src/MotionDetector.cpp.o.d -o CMakeFiles/tracker.dir/src/MotionDetector.cpp.o -c /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/MotionDetector.cpp
+
+CMakeFiles/tracker.dir/src/MotionDetector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tracker.dir/src/MotionDetector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/MotionDetector.cpp > CMakeFiles/tracker.dir/src/MotionDetector.cpp.i
+
+CMakeFiles/tracker.dir/src/MotionDetector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tracker.dir/src/MotionDetector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/MotionDetector.cpp -o CMakeFiles/tracker.dir/src/MotionDetector.cpp.s
+
 CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o: CMakeFiles/tracker.dir/flags.make
 CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o: ../src/ObjectTracking.cpp
 CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o: CMakeFiles/tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o -MF CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o.d -o CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o -c /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/ObjectTracking.cpp
 
 CMakeFiles/tracker.dir/src/ObjectTracking.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/tracker.dir/src/ObjectTracking.cpp.s: cmake_force
 CMakeFiles/tracker.dir/src/RoadLine.cpp.o: CMakeFiles/tracker.dir/flags.make
 CMakeFiles/tracker.dir/src/RoadLine.cpp.o: ../src/RoadLine.cpp
 CMakeFiles/tracker.dir/src/RoadLine.cpp.o: CMakeFiles/tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tracker.dir/src/RoadLine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tracker.dir/src/RoadLine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tracker.dir/src/RoadLine.cpp.o -MF CMakeFiles/tracker.dir/src/RoadLine.cpp.o.d -o CMakeFiles/tracker.dir/src/RoadLine.cpp.o -c /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/RoadLine.cpp
 
 CMakeFiles/tracker.dir/src/RoadLine.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/tracker.dir/src/RoadLine.cpp.s: cmake_force
 CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o: CMakeFiles/tracker.dir/flags.make
 CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o: ../src/detector/ObjectDetector.cpp
 CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o: CMakeFiles/tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o -MF CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o.d -o CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o -c /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/detector/ObjectDetector.cpp
 
 CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.s: cmake_force
 CMakeFiles/tracker.dir/src/main.cpp.o: CMakeFiles/tracker.dir/flags.make
 CMakeFiles/tracker.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/tracker.dir/src/main.cpp.o: CMakeFiles/tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tracker.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tracker.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tracker.dir/src/main.cpp.o -MF CMakeFiles/tracker.dir/src/main.cpp.o.d -o CMakeFiles/tracker.dir/src/main.cpp.o -c /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/main.cpp
 
 CMakeFiles/tracker.dir/src/main.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/tracker.dir/src/main.cpp.s: cmake_force
 CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.o: CMakeFiles/tracker.dir/flags.make
 CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.o: ../src/sort-tracker/Hungarian.cpp
 CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.o: CMakeFiles/tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.o -MF CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.o.d -o CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.o -c /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/sort-tracker/Hungarian.cpp
 
 CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/tracker.dir/src/sort-tracker/Hungarian.cpp.s: cmake_force
 CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.o: CMakeFiles/tracker.dir/flags.make
 CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.o: ../src/sort-tracker/KalmanTracker.cpp
 CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.o: CMakeFiles/tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.o -MF CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.o.d -o CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.o -c /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/sort-tracker/KalmanTracker.cpp
 
 CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/tracker.dir/src/sort-tracker/KalmanTracker.cpp.s: cmake_force
 CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.o: CMakeFiles/tracker.dir/flags.make
 CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.o: ../src/sort-tracker/ObjectTracker.cpp
 CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.o: CMakeFiles/tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.o -MF CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.o.d -o CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.o -c /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/sort-tracker/ObjectTracker.cpp
 
 CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/tracker.dir/src/sort-tracker/ObjectTracker.cpp.s: cmake_force
 CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.o: CMakeFiles/tracker.dir/flags.make
 CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.o: ../src/sort-tracker/TrackerManager.cpp
 CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.o: CMakeFiles/tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.o -MF CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.o.d -o CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.o -c /media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/src/sort-tracker/TrackerManager.cpp
 
 CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.i: cmake_force
@@ -198,6 +212,7 @@ CMakeFiles/tracker.dir/src/sort-tracker/TrackerManager.cpp.s: cmake_force
 # Object files for target tracker
 tracker_OBJECTS = \
 "CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.o" \
+"CMakeFiles/tracker.dir/src/MotionDetector.cpp.o" \
 "CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o" \
 "CMakeFiles/tracker.dir/src/RoadLine.cpp.o" \
 "CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o" \
@@ -211,6 +226,7 @@ tracker_OBJECTS = \
 tracker_EXTERNAL_OBJECTS =
 
 tracker: CMakeFiles/tracker.dir/src/CrosslineDetector.cpp.o
+tracker: CMakeFiles/tracker.dir/src/MotionDetector.cpp.o
 tracker: CMakeFiles/tracker.dir/src/ObjectTracking.cpp.o
 tracker: CMakeFiles/tracker.dir/src/RoadLine.cpp.o
 tracker: CMakeFiles/tracker.dir/src/detector/ObjectDetector.cpp.o
@@ -274,7 +290,7 @@ tracker: /usr/local/lib/libopencv_world.so.4.5.0
 tracker: /usr/local/lib/libopencv_world.so.4.5.0
 tracker: /usr/local/lib/libopencv_world.so.4.5.0
 tracker: CMakeFiles/tracker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/thanglmb/ThangLMb/MyProject/Algorithms/Tracker/Sort-Tracker-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable tracker"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tracker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
