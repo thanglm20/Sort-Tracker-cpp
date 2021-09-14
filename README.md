@@ -1,6 +1,6 @@
 
 # 1.Introduction
-
+App uses ncnn to detector traffic then tracks object with Kalman filter and Hungarian Algorithm
 # 2.Requirements
 	std c++14
 	OpenCV
