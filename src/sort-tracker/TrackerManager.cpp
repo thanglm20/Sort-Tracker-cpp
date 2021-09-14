@@ -51,9 +51,14 @@ Rect2f TrackerManager::predict()
 
 bool TrackerManager::isConfirmed()
 {
-    if(this->tracker.m_hit_streak >=  min_confirmed && this->tracker.m_time_since_update == 0)
-    {
+    if(this->tracker.m_time_since_update == 0)
         this->tracer.isOutOfFrame = false;
+    else 
+        this->tracer.isOutOfFrame = true;
+        
+    if(this->tracker.m_hit_streak >=  min_confirmed && this->tracker.m_time_since_update <= max_age)
+    {
+        
         return true;
     }
     return false;
@@ -72,5 +77,6 @@ bool TrackerManager::isTentative()
 
 bool TrackerManager::isOutOfFrame()
 {
+    this->tracer.isOutOfFrame = true;
     return (this->tracker.m_time_since_update > 0);
 }

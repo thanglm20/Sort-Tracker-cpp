@@ -152,6 +152,15 @@ void ObjectTracker::update(vector<ObjectTrace> detected)
 
 vector<TrackingTrace> ObjectTracker::getTracks()
 {
+    // remove
+    for (auto it = this->trackers.begin(); it != this->trackers.end();)
+    {
+        // remove dead tracklet
+        if ((*it)->isDeleted())
+            it = this->trackers.erase(it);
+        else
+            it++;    
+    }
     // check to delete object track
     vector<TrackingTrace> traceTracks;
     for (auto it = this->trackers.begin(); it != this->trackers.end();)
@@ -167,10 +176,7 @@ vector<TrackingTrace> ObjectTracker::getTracks()
             it++;
         }
         else
-            it++;  
-        // remove dead tracklet
-        if (it != this->trackers.end() && (*it)->isDeleted())
-            it = this->trackers.erase(it);      
+            it++;               
     }
     return traceTracks;
 }

@@ -38,6 +38,7 @@ public:
 		kf_count++;
 		if(kf_count >= ULONG_MAX)
 			kf_count = 0;
+		
 	}
 
 	~KalmanTracker()
@@ -55,7 +56,7 @@ public:
 
 	int m_time_since_update;
 	int m_hits;
-	int m_hit_streak;
+	unsigned long long  m_hit_streak;
 	int m_age;
 	unsigned long m_id;
 
@@ -66,6 +67,8 @@ private:
 	cv::Mat measurement;
 
 	std::vector<Rect2f> m_history;
+
+	int max_age = 10;
 };
 
 

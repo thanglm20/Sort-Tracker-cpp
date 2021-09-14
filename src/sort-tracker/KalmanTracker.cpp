@@ -45,7 +45,7 @@ Rect2f KalmanTracker::predict()
 	Mat p = kf.predict();
 	m_age += 1;
 
-	if (m_time_since_update > 0)
+	if (m_time_since_update > max_age)
 		m_hit_streak = 0;
 	m_time_since_update += 1;
 
@@ -63,7 +63,8 @@ void KalmanTracker::update(Rect2f stateMat)
 	m_history.clear();
 	m_hits += 1;
 	m_hit_streak += 1;
-
+	if(m_hit_streak > 100)
+		m_hit_streak = 3;
 	// measurement
 	measurement.at<float>(0, 0) = stateMat.x + stateMat.width / 2;
 	measurement.at<float>(1, 0) = stateMat.y + stateMat.height / 2;

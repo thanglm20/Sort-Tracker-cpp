@@ -77,7 +77,6 @@ void HungarianAlgorithm::assignmentoptimal(int *assignment, double *cost, double
         distMatrix[row] = value;
     }
 
-
     /* memory allocation */
     coveredColumns = (bool *) calloc(nOfColumns, sizeof(bool));
     coveredRows = (bool *) calloc(nOfRows, sizeof(bool));
