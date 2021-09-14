@@ -5,7 +5,7 @@
 	std c++14
 	OpenCV
 # 3.Build & Run
-## Some commands are:
+Some commands are:
 ```
 mkdir build
 cd build
