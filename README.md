@@ -13,7 +13,7 @@ cmake ..
 make
 ./tracker
 ```
-# 3. References
+# 4.References
 https://github.com/Tencent/ncnn
 
 
